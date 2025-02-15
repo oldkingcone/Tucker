@@ -9,11 +9,20 @@ Thats where tucker comes in. Tucker is written in pure PHP, which means no exter
 
 # How to use
 
-With development of things like ![BYOSI](https://github.com/oldkingcone/BYOSI) it is possible to deploy a portal version of PHP to a windows system, and avoid the EDR/AV entirely, only things like telemetry are picked up by EDR systems.
+With development of things like ![BYOSI](https://github.com/oldkingcone/BYOSI) it is possible to deploy a portable version of PHP to a windows system, and avoid the EDR/AV entirely, only things like telemetry are picked up by EDR systems.
 
-# What this tool does to attempt to avoid that
+__What this tool does to attempt to avoid that__
 
 This tool is designed to be run on the local host using the following syntax: `php -S 127.0.0.1:8000` which serves the PHP script over port 8000 bound to the localhost (127.0.0.1) and all operations are done from within the browser, which means no powershell execution, no batch commands, no VBS, no windows native scripting is touched, so at least in theory, no telemetry.
+
+# RoadMap
+
+- Implement Raw SMBV1/2 communicaton
+- Implement Raw NBT socket communication
+- Implement SQL functions to search domains for SQL servers
+- Implement Raw DNS socket communication to "discover" assets of the domain
+- Implement LDAP communication functions (dont have LDAP to test against, so.... open to suggestions.)
+- Implement KRB5 communication functions (dont have KRB5 to test against, so.... open to suggestions.)
 
 # Disclaimer
 
