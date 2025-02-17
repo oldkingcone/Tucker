@@ -35,7 +35,7 @@ use FilesystemIterator;
         curl_setopt($cu, CURLOPT_SSL_VERIFYHOST, false);
         $response = curl_exec($cu);
         curl_close($cu);
-        return ["status" => false, "Data" => $response];
+        return ["Error" => false, "Data" => $response];
     }
 
     private function parseResponse() {
